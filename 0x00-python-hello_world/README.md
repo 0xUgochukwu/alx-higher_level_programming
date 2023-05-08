@@ -1,5 +1,5 @@
 # ALX SE
 
-## High Level Programming
+## Higher Level Programming
 
 ### Hello World 
