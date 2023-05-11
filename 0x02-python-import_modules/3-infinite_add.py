@@ -3,7 +3,7 @@
 
 if __name__ == "__main__":
     from sys import argv
-    args = sys.argv[1:]
+    args = argv[1:]
     result = 0
 
     for arg in args:
