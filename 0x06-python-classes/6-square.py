@@ -22,8 +22,8 @@ class Square:
         Raises:
             TypeError: If size is not an integer or position is not a tuple
                 of 2 positive integers.
-            ValueError: If size is less than 0 or any coordinate in the position
-                tuple is less than 0.
+            ValueError: If size is less than 0 or any coordinate in
+            the position tuple is less than 0.
 
         Returns:
             None
@@ -101,7 +101,8 @@ class Square:
         """Prints the square with the character '#'.
 
         If size is equal to 0, prints an empty line.
-        Uses the position attribute to determine the starting position of the square.
+        Uses the position attribute to determine
+        the starting position of the square.
 
         Returns:
             None
