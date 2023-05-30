@@ -101,8 +101,8 @@ class Square:
         """Prints the square with the character '#'.
 
         If size is equal to 0, prints an empty line.
-        Uses the position attribute to determine
-        the starting position of the square.
+        Uses the position attribute to determine the
+        starting position of the square.
 
         Returns:
             None
@@ -115,8 +115,8 @@ class Square:
             for _ in range(self.__size):
                 print(" " * self.__position[0] + "#" * self.__size)
 
-        def __str__(self):
-            """Returns a string representation of the Square instance.
+    def __str__(self):
+        """Returns a string representation of the Square instance.
 
         Returns:
             str: The string representation of the Square instance.
@@ -128,6 +128,8 @@ class Square:
             for _ in range(self.__position[1]):
                 square_str += "\n"
             for _ in range(self.__size):
-                square_str += " " * self.__position[0] + "#" * self.__size + "\n"
-        return square_str.rstrip()
+                square_str += " " * self.__position[0]
+                square_str += "#" * self.__size
+                square_str += "\n"
 
+        return square_str.rstrip()
