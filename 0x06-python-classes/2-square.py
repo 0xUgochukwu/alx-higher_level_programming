@@ -6,14 +6,14 @@ class Square:
     """Represents a square.
 
     Attributes:
-        __size (int): The length of a side of the square.
+        __size (int): The size of a side of the square.
     """
 
     def __init__(self, size=0):
         """Initializes a square.
 
         Args:
-            size (int, optional): The length of a side of the square.
+            size (int, optional): The size of a side of the square.
                 Defaults to 0.
 
         Raises:
@@ -23,9 +23,11 @@ class Square:
         Returns:
             None
         """
-        try:
-            if int(size) < 0:
-                raise ValueError("size must be >= 0")
-            self.__size = int(size)
-        except (TypeError, ValueError):
+        if type(size) is not int:
             raise TypeError("size must be an integer")
+        else:
+            if size < 0:
+                raise ValueError("size must be >= 0")
+            else:
+                self.__size = size
+
