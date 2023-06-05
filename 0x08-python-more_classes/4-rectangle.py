@@ -80,4 +80,4 @@ class Rectangle:
         of the rectangle that can be used to recreate a new instance.
         """
 
-        return "Rectangle({:d},{:d})".format(self.__width, self.__height)
+        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
