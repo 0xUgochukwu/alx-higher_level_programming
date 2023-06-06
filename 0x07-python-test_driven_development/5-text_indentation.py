@@ -1,14 +1,12 @@
 #!/usr/bin/python3
 """
-Function to break a text with two new lines at
-certain charractera
+Text Indentation
 """
 
 
 def text_indentation(text):
     """
-    checks that text argument is valid string
-    then implement logic to perform spiting
+    Function to indent text
     """
 
     if type(text) is not str:
