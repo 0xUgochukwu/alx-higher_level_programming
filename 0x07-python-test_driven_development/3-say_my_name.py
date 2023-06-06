@@ -1,15 +1,13 @@
 #!/usr/bin/python3
 """
-Function to print full name
+Say My Name
 
 """
 
 
 def say_my_name(first_name, last_name=""):
     """
-        takes first_name and last name,
-        checks that they are valid strings
-        and prints to output
+        Function to print full name
     """
     if type(first_name) is not str:
         raise TypeError("first_name must be a string")
