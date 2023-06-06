@@ -1,14 +1,12 @@
 #!/usr/bin/python3
 """
-Function to multiply two matrixes
-returns a single matrix  of the result
-
+Multiply Matrices
 """
 
 
 def matrix_mul(m_a, m_b):
     """
-        arguments are used as type of int
+        Function to multiply matrices
     """
     if not isinstance(m_a, list):
         raise TypeError("m_a must be a list")
@@ -58,39 +56,3 @@ def matrix_mul(m_a, m_b):
         my_arr.append(temp_arr)
 
     return my_arr
-
-
-# mat_a = [
-#     [1, 2, 3],
-#     [1, 2, 3],
-#     [1, 2, 3],
-#     [1, 2, 3],
-# ]
-
-
-# mat_b = [
-#     [1, 2, 3, 4],
-#     [1, 2, 3, 4],
-#     [1, 2, 3, 4],
-# ]
-# mat_c[0][0] = mat_a[0][0] * mat_b[0][0] + mat_a[0][1] *
-# mat_b[1][0] + mat_a[0][2] * mat_b[2][0]
-#                     1           1               2
-#         1           3               1
-# mat_c[0][1] = mat_a[0][0] * mat_b[0][1] + mat_a[0][1] *
-# mat_b[1][1] + mat_a[0][2] * mat_b[2][1]
-#                     1           2               2
-#          1           3               2
-
-# mat_a = [
-#     [3, 4],
-#     [7, 2],
-#     [5, 9],
-# ]
-
-# mat_b = [
-#     [3, 1, 5],
-#     [6, 9, 7],
-# ]
-
-# print(matrix_mul(mat_a, mat_b))
