@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Divide evrything in a list
+Divide a matrix
 """
 
 
