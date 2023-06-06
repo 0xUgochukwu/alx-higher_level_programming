@@ -1,15 +1,14 @@
 #!/usr/bin/python3
 """
-Function to divide every integer or float
-in a list of lists
-of the same size
+Divide evrything in a list
 """
 
 
 def matrix_divided(matrix, div):
     """
-        Checks for conditions of the matrix and div values
-        before performing division logic
+        Function that divides all integers in a list
+        by a divisor
+        It validates the input before division
     """
     if type(matrix) is not list:
         raise TypeError(
