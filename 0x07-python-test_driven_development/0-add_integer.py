@@ -1,14 +1,12 @@
 #!/usr/bin/python3
 """
-Function to add two integers
-returns the sum of arguments
-a and b, while making sure both
+Add Two Integers
 """
 
 
 def add_integer(a, b=98):
     """
-        arguments are used as type of int
+        Function that adds two Integers
     """
     if type(a) not in [int, float]:
         raise TypeError("a must be an integer")
