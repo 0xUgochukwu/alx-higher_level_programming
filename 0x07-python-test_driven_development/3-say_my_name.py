@@ -7,7 +7,7 @@ Say My Name
 
 def say_my_name(first_name, last_name=""):
     """
-        Function to print full name
+        Function to print your name
     """
     if type(first_name) is not str:
         raise TypeError("first_name must be a string")
