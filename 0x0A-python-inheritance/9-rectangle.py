@@ -1,25 +1,25 @@
 #!/usr/bin/python3
 """
-Square Module
+Rectangle Module
 """
 
-Rectangle = __import__("9-rectangle").Rectangle
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
-class Square(Rectangle):
-    """A Square"""
+class Rectangle(BaseGeometry):
+    """A Rectangle"""
 
-    def __init__(self, size):
-        """ Instantiation of the square object """
-        self.integer_validator("size", size)
-        self.__size = size
-        super().__init__(size, size)
+    def __init__(self, width, height):
+        """ Instantiation of the rectangle object """
 
-
+        self.integer_validator("width", width)
+        self.__width = width
+        self.integer_validator("height", height)
+        self.__height = height
 
     def area(self):
         """ Area Calculator """
-        return self.__size ** 2
+        return self.__width * self.__height
 
     def __str__(self):
         """ Informal string representation of the rectangle """
