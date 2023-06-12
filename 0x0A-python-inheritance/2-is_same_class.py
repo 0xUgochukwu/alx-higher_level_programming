@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Lookup function """
+""" Is same class function """
 
 
 def is_same_class(obj, a_class):
