@@ -2,7 +2,7 @@
 
 let n = Number(process.argv[2]);
 if (!n) {
-  console.log('Missing number of occurences');
+  console.log('Missing size');
 } else {
   let str = '';
   let size = n;
