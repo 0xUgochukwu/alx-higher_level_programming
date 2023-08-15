@@ -5,3 +5,7 @@ exports.esrever = function (list) {
     [list[i], list[list.length - 1 - i]] = [list[list.length - 1 - i], list[i]];
   }
 };
+
+
+const myArray = [1, 2, 3, 4, 5];
+exports.esrever(myArray);
