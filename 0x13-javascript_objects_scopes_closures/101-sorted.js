@@ -4,8 +4,8 @@ const dict = require('./101-data').dict;
 
 const userOccurrences = {};
 
-for (const occurrence in dict.dict) {
-  const userID = dict.dict[occurrence];
+for (const occurrence in dict) {
+  const userID = dict[occurrence];
 
   if (!userOccurrences[userID]) {
     userOccurrences[userID] = [];
