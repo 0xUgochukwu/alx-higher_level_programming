@@ -15,10 +15,10 @@ if __name__ == "__main__":
 
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
-    session = Session()
+    db = Session()
 
-    get_new_state = session.query(State).filter_by(id=2).first()
+    get_new_state = db.query(State).filter_by(id=2).first()
     get_new_state.name = 'New Mexico'
-    session.add(get_new_state)
-    session.commit()
-    session.close()
+    db.add(get_new_state)
+    db.commit()
+    db.close()
