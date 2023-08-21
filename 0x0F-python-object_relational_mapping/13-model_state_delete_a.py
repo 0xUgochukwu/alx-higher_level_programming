@@ -18,7 +18,7 @@ if __name__ == "__main__":
     db = Session()
 
     for instance in db.query(State).filter(State.name.contains('a')):
-            session.delete(instance)
+        db.delete(instance)
 
     db.commit()
     db.close()
