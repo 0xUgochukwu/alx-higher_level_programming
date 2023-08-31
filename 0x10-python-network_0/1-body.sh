@@ -1,3 +1,3 @@
 #!/bin/bash
-# Display the response size
-curl -s "$1"
+# Display the response body
+curl -sL "$1"
