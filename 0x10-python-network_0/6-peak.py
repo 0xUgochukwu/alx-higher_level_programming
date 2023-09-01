@@ -14,5 +14,5 @@ def find_peak(list_of_integers):
     (m == 0 or loi[m] >= loi[m - 1]):
         return loi[m]
     if m != ln - 1 and loi[m] < loi[m + 1]:
-        return find_peak(loi[(m + 1):])
+        return find_peak(loi[:(m + 1)])
     return find_peak(loi[:m])
