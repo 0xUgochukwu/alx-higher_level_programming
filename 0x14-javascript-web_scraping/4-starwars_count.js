@@ -14,7 +14,7 @@ request(process.argv[2], (err, res, body) => {
 
         if (characterId === '18') {
           count++;
-	}
+        }
       });
     });
     console.log(count);
