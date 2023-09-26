@@ -1,0 +1,18 @@
+#!/usr/bin/node
+
+const request = require('request');
+
+request(process.argv[2], (err, res, body) => {
+  if (err) {
+    console.log(err);
+  } else {
+    const todos = JSON.parse(body);
+    let report = {};
+    todos.forEach((todo) => {
+      if (todo.completed){
+        report[todo.userId] ? report[todo.userId]++ : 0;
+      }
+    });
+    console.log(count);
+  }
+});
