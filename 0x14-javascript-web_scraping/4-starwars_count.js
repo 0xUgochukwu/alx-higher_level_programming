@@ -10,9 +10,13 @@ request(process.argv[2], (err, res, body) => {
     const films = JSON.parse(body).results;
     let count = 0;
     films.forEach((film) => {
-      if (film.characters.includes(character)) {
-        count++;
-      }
+      film.characters.forEach((character) => {
+        const characterId = character.split('/')[5];
+
+        if (characterId === '18') {
+          count++;
+	}
+      });
     });
     console.log(count);
   }
